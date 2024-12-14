@@ -1,7 +1,45 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+// 1. Use destructuring to assign appropriate variables based on the sounds animals make.
+const animals = {
+  moo: "cow",
+  neigh: "horse",
+  baa: "sheep",
+  oink: "pig",
+  cluck: "chicken"
+};
+//String: uses destructuring to declare five animal sounds
+const { moo, neigh, baa, oink, cluck } = animals;
 
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const animalNames = {
+  bessie: "cow",
+  dolly: "sheep",
+  babe: "pig",
+  little: "chicken"
+};
+//String: uses destructuring to declare the four traditional animal names
+const { bessie, dolly, babe, little } = animalNames;
 
+const animalColors = {
+  blackAndWhite: "cow",
+  black: "sheep",
+  pink: "pig"
+};
+//String: uses destructuring to declare the three traditional animal colors
+const { blackAndWhite, black, pink } = animalColors;
+
+
+const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+//Array: uses destructuring to declare the seven traditional rainbow color variables using the color names
+const [red, orange, yellow, green, blue, indigo, violet] = rainbowColors;
+
+// Array: uses destructuring to declare six rainbow color variables using initials
+const [r, o, y, g, b, ,v,] = rainbowColors;
+
+//Array: uses destructuring to declare Indigo using indg
+const [, , , , , indg] = rainbowColors;
+
+//Object: uses destructuring to assign all appropriate variables using the keys as the variable names
 const muppet = {
   muppetName: 'Miss Piggy',
   color: 'pink',
@@ -10,6 +48,9 @@ const muppet = {
   partner: 'Kermit'
 };
 
+const { muppetName,color,song,job,partner}= muppet
+
+//Object: uses destructuring to assign songs 2 and 4, and Kermit's job and partner
 const nestedMuppet = {
   nestedName: 'Kermit',
   nestedColor: 'green',
@@ -25,9 +66,26 @@ const nestedMuppet = {
   nestedPartner: 'Miss Piggy'
 };
 
-// Strings
+// Destructure the second and fourth songs from the songs array
+// Define the album object with the array of songs from The Muppet Movie
+const {
+  album:{
+  theMuppetMovie: {song2,song4}
+},
+nestedJob,
+nestedPartner
+} = nestedMuppet;
+
+// Destructure Kermit's job and partner from the nested object
+
+
+
+
+
+
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
+
 
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them bessie, dolly, babe, and little.
 
