@@ -67,7 +67,7 @@ const nestedMuppet = {
 };
 
 // Destructure the second and fourth songs from the songs array
-// Define the album object with the array of songs from The Muppet Movie
+// Destructure Kermit's job and partner from the nested object
 const {
   album:{
   theMuppetMovie: {song2,song4}
@@ -76,7 +76,7 @@ nestedJob,
 nestedPartner
 } = nestedMuppet;
 
-// Destructure Kermit's job and partner from the nested object
+
 
 
 
